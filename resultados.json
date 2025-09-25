@@ -1,0 +1,722 @@
+[
+  {
+    "jornada": 1,
+    "fecha": "2025-10-04",
+    "hora": "",
+    "local": "Los Fogones FS",
+    "visitante": "NEXUS FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 1,
+    "fecha": "2025-10-04",
+    "hora": "",
+    "local": "NIEBLA LETAL",
+    "visitante": "CAFETERÍA SAOKO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 1,
+    "fecha": "2025-10-04",
+    "hora": "",
+    "local": "TALLERES QUIMUR/FIDIASPRO",
+    "visitante": "REAL SUCIEDAD",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 1,
+    "fecha": "2025-10-04",
+    "hora": "",
+    "local": "DESAFÍO FS",
+    "visitante": "ASTON BIRRA",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 2,
+    "fecha": "2025-10-11",
+    "hora": "",
+    "local": "NEXUS FS",
+    "visitante": "NIEBLA LETAL",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 2,
+    "fecha": "2025-10-11",
+    "hora": "",
+    "local": "REAL SUCIEDAD",
+    "visitante": "Los Fogones FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 2,
+    "fecha": "2025-10-11",
+    "hora": "",
+    "local": "ASTON BIRRA",
+    "visitante": "CAFETERÍA SAOKO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 2,
+    "fecha": "2025-10-11",
+    "hora": "",
+    "local": "DESAFÍO FS",
+    "visitante": "TALLERES QUIMUR/FIDIASPRO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 3,
+    "fecha": "2025-10-25",
+    "hora": "",
+    "local": "NIEBLA LETAL",
+    "visitante": "CAFETERÍA SAOKO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 3,
+    "fecha": "2025-10-25",
+    "hora": "",
+    "local": "NEXUS FS",
+    "visitante": "REAL SUCIEDAD",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 3,
+    "fecha": "2025-10-25",
+    "hora": "",
+    "local": "Los Fogones FS",
+    "visitante": "DESAFÍO FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 3,
+    "fecha": "2025-10-25",
+    "hora": "",
+    "local": "ASTON BIRRA",
+    "visitante": "TALLERES QUIMUR/FIDIASPRO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 4,
+    "fecha": "2025-11-08",
+    "hora": "",
+    "local": "REAL SUCIEDAD",
+    "visitante": "NIEBLA LETAL",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 4,
+    "fecha": "2025-11-08",
+    "hora": "",
+    "local": "ASTON BIRRA",
+    "visitante": "CAFETERÍA SAOKO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 4,
+    "fecha": "2025-11-08",
+    "hora": "",
+    "local": "DESAFÍO FS",
+    "visitante": "NEXUS FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 4,
+    "fecha": "2025-11-08",
+    "hora": "",
+    "local": "TALLERES QUIMUR/FIDIASPRO",
+    "visitante": "Los Fogones FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 5,
+    "fecha": "2025-11-22",
+    "hora": "",
+    "local": "NIEBLA LETAL",
+    "visitante": "ASTON BIRRA",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 5,
+    "fecha": "2025-11-22",
+    "hora": "",
+    "local": "REAL SUCIEDAD",
+    "visitante": "DESAFÍO FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 5,
+    "fecha": "2025-11-22",
+    "hora": "",
+    "local": "CAFETERÍA SAOKO",
+    "visitante": "TALLERES QUIMUR/FIDIASPRO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 5,
+    "fecha": "2025-11-22",
+    "hora": "",
+    "local": "NEXUS FS",
+    "visitante": "Los Fogones FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 6,
+    "fecha": "2025-11-29",
+    "hora": "",
+    "local": "DESAFÍO FS",
+    "visitante": "NIEBLA LETAL",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 6,
+    "fecha": "2025-11-29",
+    "hora": "",
+    "local": "TALLERES QUIMUR/FIDIASPRO",
+    "visitante": "ASTON BIRRA",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 6,
+    "fecha": "2025-11-29",
+    "hora": "",
+    "local": "NEXUS FS",
+    "visitante": "REAL SUCIEDAD",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 6,
+    "fecha": "2025-11-29",
+    "hora": "",
+    "local": "Los Fogones FS",
+    "visitante": "CAFETERÍA SAOKO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 7,
+    "fecha": "2025-12-13",
+    "hora": "",
+    "local": "NIEBLA LETAL",
+    "visitante": "TALLERES QUIMUR/FIDIASPRO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 7,
+    "fecha": "2025-12-13",
+    "hora": "",
+    "local": "DESAFÍO FS",
+    "visitante": "REAL SUCIEDAD",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 7,
+    "fecha": "2025-12-13",
+    "hora": "",
+    "local": "ASTON BIRRA",
+    "visitante": "Los Fogones FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 7,
+    "fecha": "2025-12-13",
+    "hora": "",
+    "local": "CAFETERÍA SAOKO",
+    "visitante": "NEXUS FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 8,
+    "fecha": "2026-01-24",
+    "hora": "",
+    "local": "DESAFÍO FS",
+    "visitante": "NIEBLA LETAL",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 8,
+    "fecha": "2026-01-24",
+    "hora": "",
+    "local": "Los Fogones FS",
+    "visitante": "TALLERES QUIMUR/FIDIASPRO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 8,
+    "fecha": "2026-01-24",
+    "hora": "",
+    "local": "NEXUS FS",
+    "visitante": "ASTON BIRRA",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 8,
+    "fecha": "2026-01-24",
+    "hora": "",
+    "local": "CAFETERÍA SAOKO",
+    "visitante": "REAL SUCIEDAD",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 9,
+    "fecha": "2026-01-31",
+    "hora": "",
+    "local": "NIEBLA LETAL",
+    "visitante": "Los Fogones FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 9,
+    "fecha": "2026-01-31",
+    "hora": "",
+    "local": "TALLERES QUIMUR/FIDIASPRO",
+    "visitante": "NEXUS FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 9,
+    "fecha": "2026-01-31",
+    "hora": "",
+    "local": "DESAFÍO FS",
+    "visitante": "CAFETERÍA SAOKO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 9,
+    "fecha": "2026-01-31",
+    "hora": "",
+    "local": "ASTON BIRRA",
+    "visitante": "REAL SUCIEDAD",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 10,
+    "fecha": "2026-02-14",
+    "hora": "",
+    "local": "NEXUS FS",
+    "visitante": "Los Fogones FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 10,
+    "fecha": "2026-02-14",
+    "hora": "",
+    "local": "CAFETERÍA SAOKO",
+    "visitante": "NIEBLA LETAL ",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 10,
+    "fecha": "2026-02-14",
+    "hora": "",
+    "local": "REAL SUCIEDAD",
+    "visitante": "TALLERES QUIMUR/FIDIASPRO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 10,
+    "fecha": "2026-02-14",
+    "hora": "",
+    "local": "ASTON BIRRA",
+    "visitante": "DESAFÍO FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 11,
+    "fecha": "2026-02-21",
+    "hora": "",
+    "local": "NIEBLA LETAL",
+    "visitante": "NEXUS FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 11,
+    "fecha": "2026-02-21",
+    "hora": "",
+    "local": "Los Fogones FS",
+    "visitante": "REAL SUCIEDAD",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 11,
+    "fecha": "2026-02-21",
+    "hora": "",
+    "local": "CAFETERÍA SAOKO",
+    "visitante": "ASTON BIRRA",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 11,
+    "fecha": "2026-02-21",
+    "hora": "",
+    "local": "TALLERES QUIMUR/FIDIASPRO",
+    "visitante": "DESAFÍO FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 12,
+    "fecha": "2026-02-28",
+    "hora": "",
+    "local": "CAFETERÍA SAOKO",
+    "visitante": "NIEBLA LETAL",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 12,
+    "fecha": "2026-02-28",
+    "hora": "",
+    "local": "REAL SUCIEDAD",
+    "visitante": "NEXUS FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 12,
+    "fecha": "2026-02-28",
+    "hora": "",
+    "local": "DESAFÍO FS",
+    "visitante": "Los Fogones FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 12,
+    "fecha": "2026-02-28",
+    "hora": "",
+    "local": "TALLERES QUIMUR/FIDIASPRO",
+    "visitante": "ASTON BIRRA",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 13,
+    "fecha": "2026-03-14",
+    "hora": "",
+    "local": "NIEBLA LETAL",
+    "visitante": "REAL SUCIEDAD",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 13,
+    "fecha": "2026-03-14",
+    "hora": "",
+    "local": "CAFETERÍA SAOKO",
+    "visitante": "ASTON BIRRA",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 13,
+    "fecha": "2026-03-14",
+    "hora": "",
+    "local": "NEXUS FS",
+    "visitante": "DESAFÍO FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 13,
+    "fecha": "2026-03-14",
+    "hora": "",
+    "local": "Los Fogones FS",
+    "visitante": "TALLERES QUIMUR/FIDIASPRO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 14,
+    "fecha": "2026-03-21",
+    "hora": "",
+    "local": "ASTON BIRRA",
+    "visitante": "NIEBLA LETAL",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 14,
+    "fecha": "2026-03-21",
+    "hora": "",
+    "local": "DESAFÍO FS",
+    "visitante": "REAL SUCIEDAD",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 14,
+    "fecha": "2026-03-21",
+    "hora": "",
+    "local": "TALLERES QUIMUR/FIDIASPRO",
+    "visitante": "CAFETERÍA SAOKO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 14,
+    "fecha": "2026-03-21",
+    "hora": "",
+    "local": "Los Fogones FS",
+    "visitante": "NEXUS FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 15,
+    "fecha": "2026-04-11",
+    "hora": "",
+    "local": "NIEBLA LETAL",
+    "visitante": "DESAFÍO FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 15,
+    "fecha": "2026-04-11",
+    "hora": "",
+    "local": "ASTON BIRRA",
+    "visitante": "TALLERES QUIMUR/FIDIASPRO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 15,
+    "fecha": "2026-04-11",
+    "hora": "",
+    "local": "REAL SUCIEDAD",
+    "visitante": "NEXUS FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 15,
+    "fecha": "2026-04-11",
+    "hora": "",
+    "local": "CAFETERÍA SAOKO",
+    "visitante": "Los Fogones FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 16,
+    "fecha": "2026-04-25",
+    "hora": "",
+    "local": "TALLERES QUIMUR/FIDIASPRO",
+    "visitante": "NIEBLA LETAL",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 16,
+    "fecha": "2026-04-25",
+    "hora": "",
+    "local": "REAL SUCIEDAD",
+    "visitante": "DESAFÍO FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 16,
+    "fecha": "2026-04-25",
+    "hora": "",
+    "local": "Los Fogones FS",
+    "visitante": "ASTON BIRRA",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 16,
+    "fecha": "2026-04-25",
+    "hora": "",
+    "local": "NEXUS FS",
+    "visitante": "CAFETERÍA SAOKO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 17,
+    "fecha": "2026-05-02",
+    "hora": "",
+    "local": "NIEBLA LETAL",
+    "visitante": "DESAFÍO FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 17,
+    "fecha": "2026-05-02",
+    "hora": "",
+    "local": "TALLERES QUIMUR/FIDIASPRO",
+    "visitante": "Los Fogones FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 17,
+    "fecha": "2026-05-02",
+    "hora": "",
+    "local": "ASTON BIRRA",
+    "visitante": "NEXUS FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 17,
+    "fecha": "2026-05-02",
+    "hora": "",
+    "local": "REAL SUCIEDAD",
+    "visitante": "CAFETERÍA SAOKO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 18,
+    "fecha": "2026-05-09",
+    "hora": "",
+    "local": "Los Fogones FS",
+    "visitante": "NIEBLA LETAL",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 18,
+    "fecha": "2026-05-09",
+    "hora": "",
+    "local": "NEXUS FS",
+    "visitante": "TALLERES QUIMUR/FIDIASPRO",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 18,
+    "fecha": "2026-05-09",
+    "hora": "",
+    "local": "CAFETERÍA SAOKO",
+    "visitante": "DESAFÍO FS",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  },
+  {
+    "jornada": 18,
+    "fecha": "2026-05-09",
+    "hora": "",
+    "local": "REAL SUCIEDAD",
+    "visitante": "ASTON BIRRA",
+    "goles_local": null,
+    "goles_visitante": null,
+    "pista": ""
+  }
+]

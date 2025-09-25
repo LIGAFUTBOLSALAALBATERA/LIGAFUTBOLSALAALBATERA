@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LFSA — Liga Fútbol Sala Albatera</title>
+<style>
+  :root { --accent: #ff7a00; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, Arial, sans-serif; margin:0; background:#111; color:#eee; }
+  header { position:sticky; top:0; background:#000a; backdrop-filter: blur(6px); padding:12px 16px; display:flex; align-items:center; gap:12px; border-bottom:1px solid #333; z-index:10; }
+  header img.logo { width:44px; height:44px; object-fit:contain; filter: drop-shadow(0 0 6px #0008); }
+  header h1 { font-size:18px; margin:0; letter-spacing:.5px; font-weight:700; }
+  nav { display:flex; gap:8px; margin-left:auto; }
+  nav button { background:#222; color:#eee; border:1px solid #333; padding:8px 12px; border-radius:10px; cursor:pointer; }
+  nav button.active { border-color: var(--accent); color:#fff; }
+  main { max-width:1100px; margin:24px auto; padding:0 16px; position:relative; }
+  .card { background:#1a1a1a; border:1px solid #2a2a2a; border-radius:16px; padding:16px; margin-bottom:16px; }
+  table { width:100%; border-collapse:collapse; }
+  th, td { padding:10px; border-bottom:1px solid #2a2a2a; text-align:left; }
+  th { color:#bbb; font-weight:600; }
+  .watermark { position:fixed; inset:0; background: url('logo.png') center/55% no-repeat; opacity:.06; pointer-events:none; filter: sepia(1) hue-rotate(330deg) saturate(6); }
+  .badge { background:var(--accent); color:#000; padding:2px 8px; border-radius:999px; font-weight:700; }
+  a { color: var(--accent); }
+  h2 { margin:0 0 10px 0; font-size:18px; }
+  .jornada-title{display:flex; align-items:center; justify-content:space-between;}
+  .muted{color:#aaa; font-size:12px;}
+</style>
+</head>
+<body>
+<div class="watermark"></div>
+<header>
+  <img class="logo" src="logo.png" alt="LFSA">
+  <h1>LFSA · Liga Fútbol Sala Albatera</h1>
+  <nav>
+    <button data-tab="jornadas" class="active">Jornadas</button>
+    <button data-tab="clasificacion">Clasificación</button>
+    <button data-tab="goleadores">Goleadores</button>
+    <button data-tab="colaboradores">Colaboradores</button>
+  </nav>
+</header>
+<main>
+  <section id="tab-jornadas"></section>
+  <section id="tab-clasificacion" style="display:none"></section>
+  <section id="tab-goleadores" style="display:none"></section>
+  <section id="tab-colaboradores" style="display:none">
+    <div class="card">
+      <h3>Colaboradores</h3>
+      <ul>
+        <li><a href="https://instagram.com/voragoband" target="_blank">@voragoband</a></li>
+        <li><a href="https://instagram.com/afroditacreaciones" target="_blank">@afroditacreaciones</a></li>
+        <li><a href="https://instagram.com/limonerofuzz" target="_blank">@limonerofuzz</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+<script>
+const byId = (id) => document.getElementById(id);
+const tabs = document.querySelectorAll('nav button');
+tabs.forEach(b=>b.addEventListener('click',()=>{
+  tabs.forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  ['jornadas','clasificacion','goleadores','colaboradores'].forEach(t=>{
+    byId('tab-'+t).style.display = (t===b.dataset.tab)?'block':'none';
+  });
+}));
+
+async function loadJSON(path) {
+  const r = await fetch(path);
+  return r.json();
+}
+
+function groupBy(arr, key) {
+  return arr.reduce((acc, it) => {
+    const k = (it[key] ?? 'Sin jornada');
+    acc[k] = acc[k] || [];
+    acc[k].push(it);
+    return acc;
+  }, {});
+}
+
+function renderJornadas(data) {
+  const container = byId('tab-jornadas');
+  container.innerHTML = '';
+  const grouped = groupBy(data, 'jornada');
+  const jornadas = Object.keys(grouped).sort((a,b)=>parseInt(a)-parseInt(b));
+  jornadas.forEach(j => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    const matches = grouped[j];
+    const title = document.createElement('div');
+    title.className = 'jornada-title';
+    const left = document.createElement('h2');
+    left.textContent = 'Jornada ' + j;
+    const right = document.createElement('div');
+    const anyDate = matches.find(m => (m.fecha && m.fecha !== 'NaT'));
+    right.innerHTML = anyDate ? '<span class="muted">'+ anyDate.fecha +'</span>' : '';
+    title.appendChild(left); title.appendChild(right);
+    card.appendChild(title);
+    const table = document.createElement('table');
+    table.innerHTML = `
+      <thead>
+        <tr><th>Hora</th><th>Local</th><th></th><th>Visitante</th><th>Pista</th></tr>
+      </thead>
+      <tbody></tbody>`;
+    const tbody = table.querySelector('tbody');
+    matches.forEach(m => {
+      const score = (Number.isInteger(m.goles_local) && Number.isInteger(m.goles_visitante)) ? 
+        '<span class="badge">'+m.goles_local+' - '+m.goles_visitante+'</span>' :
+        '<span class="muted">'+(m.hora||'')+'</span>';
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${m.hora||''}</td><td>${m.local||''}</td><td style="text-align:center">${score}</td><td>${m.visitante||''}</td><td>${m.pista||''}</td>`;
+      tbody.appendChild(tr);
+    });
+    card.appendChild(table);
+    container.appendChild(card);
+  });
+}
+
+function renderClasificacion(rows) {
+  const el = byId('tab-clasificacion');
+  el.innerHTML = '';
+  const card = document.createElement('div');
+  card.className = 'card';
+  const h = document.createElement('h2'); h.textContent = 'Clasificación';
+  card.appendChild(h);
+  const table = document.createElement('table');
+  table.innerHTML = '<thead><tr><th>#</th><th>Equipo</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th>GF</th><th>GC</th><th>DG</th><th>Puntos</th></tr></thead><tbody></tbody>';
+  const tbody = table.querySelector('tbody');
+  rows.forEach((r, i)=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${i+1}</td><td>${r.equipo||''}</td><td>${r.pj|0}</td><td>${r.pg|0}</td><td>${r.pe|0}</td><td>${r.pp|0}</td><td>${r.gf|0}</td><td>${r.gc|0}</td><td>${r.dg|0}</td><td><span class="badge">${r.puntos|0}</span></td>`;
+    tbody.appendChild(tr);
+  });
+  card.appendChild(table);
+  el.appendChild(card);
+}
+
+function renderGoleadores(rows) {
+  const el = byId('tab-goleadores');
+  el.innerHTML='';
+  const card = document.createElement('div');
+  card.className='card';
+  const h = document.createElement('h2'); h.textContent='Goleadores';
+  card.appendChild(h);
+  const table = document.createElement('table');
+  table.innerHTML = '<thead><tr><th>#</th><th>Jugador</th><th>Equipo</th><th>Goles</th></tr></thead><tbody></tbody>';
+  const tbody = table.querySelector('tbody');
+  rows.forEach((r,i)=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${i+1}</td><td>${r.jugador||''}</td><td>${r.equipo||''}</td><td><span class="badge">${r.goles|0}</span></td>`;
+    tbody.appendChild(tr);
+  });
+  card.appendChild(table);
+  el.appendChild(card);
+}
+
+(async function init(){
+  try {
+    const [res, cls, gol] = await Promise.all([
+      loadJSON('resultados.json'),
+      loadJSON('clasificacion.json'),
+      loadJSON('goleadores.json')
+    ]);
+    renderJornadas(res);
+    renderClasificacion(cls);
+    renderGoleadores(gol);
+  } catch(e) {
+    byId('tab-jornadas').innerHTML = '<div class="card">Error cargando los datos.</div>';
+  }
+})();
+</script>
+</body>
+</html>
